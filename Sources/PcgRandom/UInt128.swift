@@ -83,11 +83,11 @@ public extension UInt128 {
     }
     
     var lo: UInt64 {
-        self.lowerBits
+        UInt64(self & UInt128(UInt64.max))
     }
     
     var hi: UInt64 {
-        self.upperBits
+        UInt64(self >> 64)
     }
     
 }
