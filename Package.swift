@@ -11,7 +11,7 @@ let package = Package(
             targets: ["PcgRandom"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/gongzhang/UInt128.git", .revision("9618a4c6cb022275d5a72a762c05ff5a1f6cda1f")),
+        .package(url: "https://github.com/gongzhang/UInt128.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
