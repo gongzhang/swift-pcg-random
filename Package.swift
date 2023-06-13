@@ -4,14 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "PcgRandom",
-    platforms: [.iOS(.v11), .macOS(.v10_10), .watchOS(.v2)],
+    platforms: [.iOS(.v11), .macOS(.v10_13), .watchOS(.v4)],
     products: [
         .library(
             name: "PcgRandom",
             targets: ["PcgRandom"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/gongzhang/UInt128.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/gongzhang/UInt128.git", .upToNextMajor(from: "1.0.1")),
     ],
     targets: [
         .target(
