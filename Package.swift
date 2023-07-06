@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "PcgRandom",
             dependencies: [
-                .byNameItem(name: "PcgRandomC", condition: .when(platforms: [.macOS, .iOS, .visionOS])),
+                .byNameItem(name: "PcgRandomC", condition: .when(platforms: [.macOS, .iOS, .visionOS, .macCatalyst])),
                 .byNameItem(name: "UInt128", condition: .when(platforms: [.watchOS])),
             ]),
         .target(
