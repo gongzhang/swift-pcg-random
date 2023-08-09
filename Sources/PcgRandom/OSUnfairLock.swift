@@ -1,4 +1,4 @@
-#if os(macOS) || os(iOS) || os(watchOS)
+#if os(macOS) || os(iOS) || os(watchOS) || os(xrOS)
 import os
 
 @available(macOS 10.12, iOS 10.0, watchOS 3.0, *)
